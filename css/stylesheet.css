@@ -31,9 +31,11 @@ body {
 
 #header1 li{
     padding: 0 10px;
-    display: inline-flex;
     text-align: center;
     color: #fff;
+    display: inline-flex;
+    vertical-align: middle;
+    margin: 0px;
 }
 
 #header1 a{
@@ -58,7 +60,6 @@ body {
 #header2{
     display: flex;
     height: 45px;
-    width: auto;
     font-family: Arial;
     font-size: 12px;
     align-items: center;
@@ -73,8 +74,8 @@ body {
     display: inline-flex;
 }
 
-#header2 li:nth-of-type(2) {
-    margin-bottom: 10px;
+#header2 li:nth-of-type(2){
+    margin-top: 10px;
 }
 
 #header2 a{
@@ -87,6 +88,12 @@ a#select_red{
     background: #fff;
     padding: 25px;
     z-index: 1;
+
+}
+
+#select_red{
+    position: relative;
+    top: -6px;
 }
 
 #title1{
@@ -138,8 +145,7 @@ a#select_red{
 
 .product1_3 h3{
     color: #1b8e99;
-    background: #1b8e99;
-    opacity: 0.1;;
+    background-color: rgba(27, 142, 153, 0.1);
 }
 
 .product1_3 p{
@@ -167,8 +173,7 @@ a#select_red{
 
 #product2 h3{
     color: #660000;
-    background: #660000;
-    opacity: 0.1;
+    background-color: rgba(102, 0, 0, 0.1);
 }
 
 #product2 p{
@@ -336,11 +341,4 @@ a#select_red{
 
 #footer2_text{
     margin-right: 80px;
-}
-
-#header1 li,
-#header2 li {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0px;
 }
